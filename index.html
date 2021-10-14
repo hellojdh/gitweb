@@ -6,8 +6,8 @@
 
     <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
 </head>
-<body>
 
+<body>
 
 <div>
     <div>
@@ -34,9 +34,12 @@
         </div>
     </div>
 </div>
-<input type="button" value="시작" onclick="start();">
+<input type="button"  value="시작" onclick="t();">
+코드를 입력해주세요 :)
+<input type="number" id="codeButton" value="" />
 </body>
 <script>
+document.getElementById('canvasDiv').style.visibility = "hidden";
 document. Function('return false');
 
     let wheelSpinning = false;
@@ -46,7 +49,8 @@ document. Function('return false');
     }
 
     function endGame(point){
-       alert("끝!")
+        document.getElementById('canvasDiv').style.visibility = "hidden";
+       alert("끝!");
     }
 
     function windows_close(){
@@ -54,9 +58,29 @@ document. Function('return false');
         window.open('about:blank', '_self',option).close();
     }
 
- function click(){
+    function t(){
+        if(document.getElementById('codeButton').value == 486){
+            document.getElementById('canvasDiv').style.visibility = "visible";
+            start();
+        }else{
+            alert("Code가 다릅니다~!");
+        }
+    }
+
+    function click(){
         if((event.button==2)||(event.button==3)){
         }
     }
 </script>
 </html>
+
+
+
+
+
+
+
+
+
+
+
