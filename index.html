@@ -11,7 +11,12 @@
 
 <div>
     <div>
-        점수<div id="score">0</div>
+        <div id="instructions" style="display:none;">
+        </div>
+        <div id="results">
+        </div>
+        점수
+        <div id="score">0</div>
     </div>
 
     <div class="containerEX">
@@ -34,6 +39,12 @@
 <script>
 document. Function('return false');
 
+    let wheelSpinning = false;
+
+    function restartBtn_click(){
+        document.getElementById('spin_button').disabled = false;
+    }
+
     function endGame(point){
        alert("끝!")
     }
@@ -49,14 +60,3 @@ document. Function('return false');
     }
 </script>
 </html>
-
-
-
-
-
-
-
-
-
-
-
