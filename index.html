@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=11" charset="utf-8">
+    <title>연습해보자</title>
+
+    <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
+</head>
+<body>
+
+
+<div>
+    <div>
+        점수<div id="score">0</div>
+    </div>
+
+    <div class="containerEX">
+        <div class="boxEX-mid">
+            <div id="gameField" style="margin-top:180px; margin-left:36px;">
+                <div id="canvasDiv"> </div>
+                <script type="text/javascript" src="three.min.js"></script>
+                <script type="text/javascript" src="cannon.min.js"></script>
+                <script type="text/javascript" src="stack.js"></script>
+
+            </div>
+            <div style="margin-left:250px; margin-top: 25px;">
+            </div>
+
+        </div>
+    </div>
+</div>
+<input type="button" value="시작" onclick="start();">
+</body>
+<script>
+document. Function('return false');
+
+    function endGame(point){
+       alert("끝!")
+    }
+
+    function windows_close(){
+        var option= "left=9999, top=9999, width=10, height=10";
+        window.open('about:blank', '_self',option).close();
+    }
+
+ function click(){
+        if((event.button==2)||(event.button==3)){
+        }
+    }
+</script>
+</html>
+
+
+
+
+
+
+
+
+
+
+
